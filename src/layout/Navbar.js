@@ -48,7 +48,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder=" Please enter your zip"
-              className="bg-transparent p-1 border rounded-lg w-[150px] border-none outline-none placeholder:text-gray-50 text-[12px]"
+              className="bg-transparent p-1 border rounded-lg w-[150px] border-none focus:border border-b-gray-50 outline-none placeholder:text-gray-50 text-[12px]"
             />
           </div>
           <Link href="/login" className="flex items-center gap-5">
@@ -59,7 +59,7 @@ const Navbar = () => {
         </section>
       </nav>
 
-      <nav className="bg-white shadow-md py-4 px-6 border-b">
+      <nav className="bg-white shadow-md py-4 px-6 border-b w-full">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-xl font-bold text-gray-900">
             <Link href="/" className="flex items-center">
