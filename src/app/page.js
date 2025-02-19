@@ -3,9 +3,5 @@ import SpecificProduct from "@/components/SpecificProduct";
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <>
-      <SpecificProduct />
-    </>
-  );
+  return <></>;
 }
