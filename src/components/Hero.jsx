@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="relative h-[400px] w-full top-[-85px] bg-[url('https://images.pexels.com/photos/5117638/pexels-photo-5117638.jpeg')] bg-cover bg-center">
+    <div className="relative h-[400px] w-full bg-[url('https://images.pexels.com/photos/5117638/pexels-photo-5117638.jpeg')] bg-cover bg-center">
       <div class="custom-shape-divider-bottom-1739966328 overflow-hidden">
         <svg
           data-name="Layer 1"
