@@ -35,7 +35,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className=" bg-transparent">
       <nav className="hidden bg-black text-gray-50 w-full md:flex md:items-center md:justify-between py-3 px-8 text-[12px] ">
         <div className="flex items-center gap-8">
           {links.slice(0, 5).map((link) => (
@@ -61,9 +61,9 @@ const Navbar = () => {
         </section>
       </nav>
 
-      <nav className="bg-white shadow-md py-4 px-6 border-b">
+      <nav className="py-4 sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-xl font-bold text-gray-900">
+          <div className="text-xl font-bold text-gray-900 bg-white">
             <Link href="/" className="flex items-center">
               <img src="/logo.png" alt="" height={60} width={60} />
             </Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <ul className="hidden md:flex space-x-10 text-gray-700  text-[12px] md:text-[14px]">
+          <ul className="hidden md:flex space-x-10 text-white  text-[12px] md:text-[14px]">
             <VerticalLine />
             {links.slice(5).map((link) => (
               <li key={link.label}>
@@ -93,7 +93,7 @@ const Navbar = () => {
           </ul>
 
           <div className="hidden md:flex items-center space-x-4 text-[14px] font-semibold">
-            <Link href={"/new-seasonal"} className="text-gray-800">
+            <Link href={"/new-seasonal"} className="text-white">
               New & Trending
             </Link>
             <Link href={"/search"}>

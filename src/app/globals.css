@@ -19,3 +19,23 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-shape-divider-bottom-1739966328 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1739966328 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 286px;
+}
+
+.custom-shape-divider-bottom-1739966328 .shape-fill {
+  fill: #ffffff;
+}
