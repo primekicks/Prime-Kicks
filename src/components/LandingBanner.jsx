@@ -3,7 +3,7 @@ import React from "react";
 const LandingBanner = () => {
   return (
     <main className="flex justify-center items-center py-10">
-      <section className="shadow-lg bg-[url('/6300675.webp')] bg-cover h-[450px] w-[900px] rounded-xl flex flex-col justify-center items-center max-w-[1200px] mx-auto">
+      <section className=" bg-[url('/6300675.webp')] bg-cover h-[450px] w-[900px] rounded-xl flex flex-col justify-center items-center max-w-[1200px] mx-auto">
         <h1 className="font-extrabold text-2xl">
           THE BIGGEST FOOTWEARS MARKETPLACE IN NEPAL{" "}
         </h1>

@@ -20,3 +20,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+
+.custom-shape-divider-bottom-1740048757 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1740048757 svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 132px;
+}
+
+.custom-shape-divider-bottom-1740048757 .shape-fill {
+  fill: #ffffff;
+}
+
+.swiper-pagination-bullet {
+  background-color: black !important;
+}

@@ -120,7 +120,7 @@ const Navbar = () => {
                 <input
                   type="search"
                   placeholder="Search product here..."
-                  className="w-[200px] focus:border border-2  border-gray-400  px-2 py-2 text-gray-700 rounded-md outline-none placeholder:text-gray-400 font-thin text-sm"
+                  className="w-[200px] focus:border-2 border-2  border-gray-400  px-2 py-2 text-gray-700 rounded-md outline-none placeholder:text-gray-400 font-thin text-sm"
                 />
                 <button className="relative ml-[-30px]">
                   <SearchIcon />
