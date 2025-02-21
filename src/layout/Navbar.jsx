@@ -47,7 +47,7 @@ const Navbar = () => {
     { label: "Sale", href: "/mens" },
     { label: "Formal", href: "/formal" },
     { label: "Luxury", href: "/luxury" },
-    { label: "Sports & Running", href: "/sports-running" },
+    { label: "Sports & Running", href: "/sports" },
     { label: "New Arrivals", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];
