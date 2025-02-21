@@ -83,8 +83,8 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className=" bg-white shadow-md py-4 px-6 border-b w-full">
-        <div className="max-w-[1200px] container mx-auto flex justify-between items-center">
+      <nav className=" bg-white shadow-md py-2 px-6 border-b w-full z-50 top-0 sticky">
+        <div className="container mx-auto flex justify-between items-center">
           <div className="text-xl font-bold text-gray-900">
             <Link href="/" className="flex items-center">
               <img src="/logo.png" alt="" height={60} width={60} />

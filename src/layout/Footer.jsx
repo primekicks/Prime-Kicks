@@ -1,7 +1,9 @@
 import Facebook from "@/ui/Facebook";
 import Instagram from "@/ui/Instagram";
+import LinkedIn from "@/ui/LinkedIn";
 import Pinterest from "@/ui/Pinterest";
 import TikTok from "@/ui/TikTok";
+import Twitter from "@/ui/Twitter";
 import Link from "next/link";
 import React from "react";
 
@@ -93,23 +95,35 @@ const Footer = () => {
         <h1 className="font-bold py-3">Follow us on </h1>
         <ul className="flex space-x-5">
           <li>
-            <Link href="#">
+            <Link
+              href={"#"}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium shadow-sm h-9 w-9 group brightness-125 transition hover:bg-gray-400 bg-white text-black"
+            >
               <Facebook />
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link
+              href={"#"}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium shadow-sm h-9 w-9 group brightness-125 transition hover:bg-gray-400 bg-white text-black"
+            >
               <Instagram />
             </Link>
           </li>
           <li>
-            <Link href="#">
-              <Pinterest />
+            <Link
+              href={"#"}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium shadow-sm h-9 w-9 group brightness-125 transition hover:bg-gray-400 bg-white text-black"
+            >
+              <Twitter />
             </Link>
           </li>
           <li>
-            <Link href="#">
-              <TikTok />
+            <Link
+              href={"#"}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium shadow-sm h-9 w-9 group brightness-125 transition hover:bg-gray-400 bg-white text-black"
+            >
+              <LinkedIn />
             </Link>
           </li>
         </ul>
