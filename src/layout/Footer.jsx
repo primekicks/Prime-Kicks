@@ -28,6 +28,7 @@ const Footer = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua."
           </p>
           <h1 className=" font-bold">We Accept</h1>
+
           <div className="flex gap-14 py-3 ">
             <Link href="#">
               <img

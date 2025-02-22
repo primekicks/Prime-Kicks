@@ -47,16 +47,16 @@ const Navbar = () => {
     { label: "Sale", href: "/mens" },
     { label: "Formal", href: "/formal" },
     { label: "Luxury", href: "/luxury" },
-    { label: "Sports & Running", href: "/sports-running" },
+    { label: "Sports", href: "/sports" },
     { label: "New Arrivals", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];
 
   return (
-    <div>
-      <nav className="hidden md:flex bg-black text-gray-50  py-3 px-6 text-[12px]">
+    <>
+      <nav className=" hidden md:flex bg-black text-gray-50  py-3 px-6 text-[12px]">
         <div
-          className={` container mx-auto hidden md:flex md:items-center md:justify-between`}
+          className={`max-w-[1400px] container mx-auto hidden md:flex md:items-center md:justify-between`}
         >
           <div className="flex items-center gap-8">
             {links.slice(0, 5).map((link) => (
@@ -83,8 +83,8 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className=" bg-white shadow-md py-4 px-6 border-b w-full">
-        <div className="container mx-auto flex justify-between items-center">
+      <nav className=" bg-white shadow-md py-2 px-6 border-b w-full z-50 top-0 sticky">
+        <div className="max-w-[1200px] container mx-auto flex justify-between items-center">
           <div className="text-xl font-bold text-gray-900">
             <Link href="/" className="flex items-center">
               <img src="/logo.png" alt="" height={60} width={60} />
@@ -114,13 +114,18 @@ const Navbar = () => {
             <VerticalLine />
           </ul>
 
-          <div className="hidden md:flex items-center justify-center space-x-4 text-[14px] font-semibold">
-            <div className="flex items-center justify-center gap-2 relative">
-              <input
-                type="search"
-                placeholder="Search product here..."
-                className="max-w-max  bg-gray-200 focus:border  border-gray-700  px-2 py-1 text-gray-700 rounded-md outline-none placeholder:text-gray-400 font-thin text-sm"
-              />
+          <div className="hidden md:flex items-center justify-center gap-3 space-x-4 text-[14px] font-semibold">
+            <div className="flex items-center justify-center relative">
+              <div className="flex justify-center items-center">
+                <input
+                  type="search"
+                  placeholder="Search product here..."
+                  className="w-[200px] focus:border-2 border-2  border-gray-400  px-2 py-2 text-gray-700 rounded-md outline-none placeholder:text-gray-400 font-thin text-sm"
+                />
+                <button className="relative ml-[-30px]">
+                  <SearchIcon />
+                </button>
+              </div>
               <button className="absolute right-2"></button>
             </div>
 
@@ -137,7 +142,7 @@ const Navbar = () => {
                 <input
                   type="text"
                   placeholder="Search product here..."
-                  className="  rounded-md focus:border border-gray-800  w-1/2 px-3 py-2"
+                  className="  rounded-md focus:border border-gray-800  w-1/2 px-3 py-4"
                 />
 
                 <button className="bg-gray-900  p-2">
@@ -157,7 +162,7 @@ const Navbar = () => {
           </div>
         )}
       </nav>
-    </div>
+    </>
   );
 };
 
