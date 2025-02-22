@@ -8,7 +8,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="w-[100%] bg-black text-white  ">
-      <div className="max-w-[1600px] mx-auto container w-[100%] flex justify-between flex-wrap gap-5 lg:gap-5 sm:py-[30px] sm:px-0 p-[10px] ">
+      <div className="max-w-[1600px] mx-auto container w-[100%] flex justify-between flex-wrap gap-5 lg:gap-5 sm:py-[30px] sm:px-0 p-[20px] ">
         <div className="w-[100%] sm:w-[50%] md:w-[50%] lg:w-[30%] xl:w-[30%]  xl:p-4 ">
           <h1 className="text-lg font-bold text-green-600 flex items-center">
             <span>
@@ -27,6 +27,8 @@ const Footer = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua."
           </p>
+          <h1 className=" font-bold">We Accept</h1>
+
           <div className="flex gap-14 py-3 ">
             <Link href="#">
               <img
