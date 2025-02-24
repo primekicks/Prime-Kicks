@@ -5,6 +5,41 @@ import Twitter from "@/ui/Twiter";
 import Link from "next/link";
 import React from "react";
 
+const socialMedia = [
+  {
+    icon: <Facebook />,
+  },
+  {
+    icon: <Instagram />,
+  },
+  {
+    icon: <LinkedIn />,
+  },
+  {
+    icon: <Twitter />,
+  },
+];
+
+const quickLinks = [
+  { label: "Shops" },
+  { label: "Men" },
+  { label: "Casual" },
+  { label: "Sale" },
+  { label: "Formal" },
+  { label: "Luxury" },
+  { label: "Sporting & Running" },
+  { label: "New Arrivals" },
+  { label: "Contact" },
+  { label: "New & Seasonal" },
+];
+
+const company = [
+  { label: "About" },
+  { label: "Contact" },
+  { label: "Register" },
+  { label: "Shops" },
+];
+
 const Footer = () => {
   return (
     <footer className="w-[100%] bg-black text-white  ">
@@ -53,6 +88,13 @@ const Footer = () => {
         <span className="md:w-[50%] lg:w-[12%] xl:w-[20%] sm:w-[45%] w-[42%] xl:p-5  ">
           <h1 className=" font-bold">Quick Links</h1>
           <ul className="py-3 space-y-2 text-sm">
+            {quickLinks.map((value, i) => {
+              return (
+                <li key={i}>
+                  <Link href="#">{value.label}</Link>
+                </li>
+              );
+            })}
             <li>Shops</li>
             <li>Men</li>
             <li>Womens</li>
@@ -69,6 +111,14 @@ const Footer = () => {
         <span className="md:w-[40%] lg:w-[10%] xl:w-[20%] sm:w-[40%] w-[40%] xl:p-5  ">
           <h1 className="font-bold">Company</h1>
           <ul className="py-3 space-y-2 text-sm">
+            {company.map((value, i) => {
+              return (
+                <li>
+                  <Link href="#">{value.label}</Link>
+                </li>
+              );
+            })}
+
             <li>About</li>
             <li>Contact</li>
             <li>Register</li>
@@ -97,38 +147,18 @@ const Footer = () => {
 
           <h1 className="font-bold py-3">Follow us on </h1>
           <ul className="flex space-x-5">
-            <li>
-              <Link
-                href="#"
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium shadow-sm h-9 w-9 group brightness-125 transition hover:bg-black text-black bg-white hover:text-white"
-              >
-                <Facebook />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium shadow-sm h-9 w-9 group brightness-125 transition hover:bg-black text-black bg-white hover:text-white"
-              >
-                <Instagram />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium shadow-sm h-9 w-9 group brightness-125 transition hover:bg-black text-black bg-white hover:text-white"
-              >
-                <Twitter />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium shadow-sm h-9 w-9 group brightness-125 transition hover:bg-black text-black bg-white hover:text-white"
-              >
-                <LinkedIn />
-              </Link>
-            </li>
+            {socialMedia.map((value, i) => {
+              return (
+                <li key={i}>
+                  <Link
+                    href="#"
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium shadow-sm h-9 w-9 group brightness-125 transition hover:bg-black text-black bg-white hover:text-white"
+                  >
+                    {value.icon}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
