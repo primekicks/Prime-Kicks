@@ -95,17 +95,6 @@ const Footer = () => {
                 </li>
               );
             })}
-            <li>Shops</li>
-            <li>Men</li>
-            <li>Womens</li>
-            <li>Casual</li>
-            <li>Sale</li>
-            <li>Forman</li>
-            <li>Luxury</li>
-            <li>Sports & Running</li>
-            <li>New Arrivals</li>
-            <li>Contact</li>
-            <li>New & Seasonal</li>
           </ul>
         </span>
         <span className="md:w-[40%] lg:w-[10%] xl:w-[20%] sm:w-[40%] w-[40%] xl:p-5  ">
@@ -118,11 +107,6 @@ const Footer = () => {
                 </li>
               );
             })}
-
-            <li>About</li>
-            <li>Contact</li>
-            <li>Register</li>
-            <li>Shops</li>
           </ul>
         </span>
         <div className="md:w-[40%] lg:w-[20%] xl:w-[25%] sm:w-[40%] w-[100%] xl:p-5 ">
