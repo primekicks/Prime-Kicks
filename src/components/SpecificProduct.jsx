@@ -4,35 +4,35 @@ import React from "react";
 
 const SpecificProduct = () => {
   return (
-    <main className="flex justify-center gap-5 px-10 rounded-xl py-10">
-      <section className=" h-[95%] px-5 flex flex-col gap-3">
+    <main className="flex sm:flex-row flex-col justify-center gap-5 sm:px-10 rounded-xl sm:py-10 py-5">
+      <section className="h-[95%] sm:px-5 px-2 flex flex-col gap-3">
         Prime Kicks {">"} Shoes {">"} Nike
         <div className="flex flex-col  items-start gap-[30px] h-full">
-          <span className="h-[280px] w-[600px] bg-slate-300 rounded-xl shadow-md overflow-hidden">
+          <span className="sm:h-[280px] sm:w-[600px] bg-slate-300 rounded-xl shadow-md overflow-hidden">
             <img
               src="https://m.media-amazon.com/images/I/51dm6loN4lL._AC_SY575_.jpg"
               className="w-full h-full object-cover object-center"
             />
           </span>
-          <div className="flex items-center justify-between w-[600px]">
-            <span className="h-[90px] w-[90px] bg-[url('https://m.media-amazon.com/images/I/618FhFPg8+L._AC_SX695_.jpg')] bg-cover bg-center rounded-xl border-2 border-black"></span>
-            <span className="h-[90px] w-[90px] bg-[url('https://m.media-amazon.com/images/I/61JJee52mrL._AC_SX695_.jpg')] bg-cover bg-center rounded-xl"></span>
-            <span className="h-[90px] w-[90px] bg-[url('https://m.media-amazon.com/images/I/517FivfQhGL._AC_SX695_.jpg')] bg-cover bg-center  rounded-xl"></span>
-            <span className="h-[90px] w-[90px] bg-[url('https://m.media-amazon.com/images/I/61ZeiaHrtqL._AC_SX695_.jpg')] bg-cover bg-center  rounded-xl"></span>
-            <span className="h-[90px] w-[90px] bg-[url('https://m.media-amazon.com/images/I/519kdQJ8j0L._AC_SX695_.jpg')] bg-cover bg-center  rounded-xl"></span>
+          <div className="flex flex-wrap items-center justify-between sm:w-[600px] w-full">
+            <span className="sm:h-[90px] sm:w-[90px] h-[70px] w-[70px] bg-[url('https://m.media-amazon.com/images/I/618FhFPg8+L._AC_SX695_.jpg')] bg-cover bg-center rounded-xl border-2 border-black"></span>
+            <span className="sm:h-[90px] sm:w-[90px] h-[70px] w-[70px] bg-[url('https://m.media-amazon.com/images/I/61JJee52mrL._AC_SX695_.jpg')] bg-cover bg-center rounded-xl"></span>
+            <span className="sm:h-[90px] sm:w-[90px] h-[70px] w-[70px] bg-[url('https://m.media-amazon.com/images/I/517FivfQhGL._AC_SX695_.jpg')] bg-cover bg-center  rounded-xl"></span>
+            <span className="sm:h-[90px] sm:w-[90px] h-[70px] w-[70px] bg-[url('https://m.media-amazon.com/images/I/61ZeiaHrtqL._AC_SX695_.jpg')] bg-cover bg-center  rounded-xl"></span>
+            <span className="sm:h-[90px] sm:w-[90px] h-[70px] w-[70px] bg-[url('https://m.media-amazon.com/images/I/519kdQJ8j0L._AC_SX695_.jpg')] bg-cover bg-center  rounded-xl"></span>
           </div>
         </div>
       </section>
 
-      <section className="w-[450px] h-[95%] px-5">
+      <section className="sm:w-[450px] h-[95%] sm:px-5 px-2">
         <span className="flex justify-between items-center">
-          <h1>Brand</h1>
-          <h1>Store Name</h1>
+          <h1>Nike</h1>
+          <h1>Nexo Footwears</h1>
         </span>
 
         <div className="py-[10px] ">
           <h1 className="font-bold text-[25px] my-1">
-            Nike Airforce 1 Tripple White
+            Nike Airforce 1 Trippple White
           </h1>
 
           <span className="flex gap-2 items-center">
@@ -66,19 +66,19 @@ const SpecificProduct = () => {
               <li className="h-[30px] w-[90px] border-2 border-white bg-black text-white rounded-md">
                 40
               </li>
-              <li className="h-[30px] w-[90px] border-2 border-black rounded-md">
+              <li className="h-[30px]  w-[90px] border-2 border-black rounded-md">
                 41
               </li>
-              <li className="h-[30px] w-[90px] border-2 border-black rounded-md">
+              <li className="h-[30px]  w-[90px] border-2 border-black rounded-md">
                 42
               </li>
               <li className="h-[30px] w-[90px] border-2 border-black rounded-md">
                 43
               </li>
-              <li className="h-[30px] w-[90px] border-2 border-black rounded-md">
+              <li className="h-[30px]  w-[90px] border-2 border-black rounded-md">
                 44
               </li>
-              <li className="h-[30px] w-[90px] border-2 border-black rounded-md">
+              <li className="h-[30px]  w-[90px] border-2 border-black rounded-md">
                 45
               </li>
             </ul>
