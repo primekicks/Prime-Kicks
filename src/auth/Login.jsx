@@ -1,10 +1,8 @@
 "use client";
 import LoginAnimation from "@/animations/anim/LoginAnimation";
-import Home from "@/app/(main)/page";
 import ColorfulFB from "@/ui/colorfulFB";
 import ColorfulGoogle from "@/ui/colorfulGoogle";
 import Facebook from "@/ui/Facebook";
-import HomeIcon from "@/ui/Home";
 import Instagram from "@/ui/Instagram";
 import LinkedIn from "@/ui/LinkedIn";
 import Lock from "@/ui/Lock";
