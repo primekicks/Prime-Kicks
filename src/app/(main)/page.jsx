@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import LandingBanner from "@/components/LandingBanner";
+import ShoeCard from "@/components/ShoeCard";
 import SpecificProduct from "@/components/SpecificProduct";
 import Image from "next/image";
 
