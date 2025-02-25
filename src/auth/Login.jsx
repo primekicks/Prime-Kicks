@@ -1,7 +1,7 @@
 "use client";
 import LoginAnimation from "@/animations/anim/LoginAnimation";
-import ColorfulFB from "@/ui/colorfulFB";
-import ColorfulGoogle from "@/ui/colorfulGoogle";
+import ColorfulFB from "@/ui/ColorfulFB";
+import ColorfulGoogle from "@/ui/ColorfulGoogle";
 import Facebook from "@/ui/Facebook";
 import Instagram from "@/ui/Instagram";
 import LinkedIn from "@/ui/LinkedIn";
