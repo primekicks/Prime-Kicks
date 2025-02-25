@@ -2,6 +2,7 @@
 import CalenderIcon from "@/ui/CalenderIcon";
 import CartIcon from "@/ui/CartIcon";
 import CrossIcon from "@/ui/CrossIcon";
+import Favourite from "@/ui/Favourite";
 import MenuIcon from "@/ui/MenuIcon";
 import MobileSearch from "@/ui/MobileSearch";
 import PeopleIcon from "@/ui/PeopleIcon";
@@ -90,6 +91,9 @@ const Navbar = () => {
               <img src="/logo.png" alt="" height={60} width={60} />
             </Link>
           </div>
+          {/* <div>
+            <Favourite />
+          </div> */}
 
           <div className="md:hidden">
             <button
@@ -116,51 +120,66 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center justify-center gap-3 space-x-4 text-[14px] font-semibold">
             <div className="flex items-center justify-center relative">
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center ">
                 <input
-                  type="search"
-                  placeholder="Search product here..."
-                  className="w-[200px] focus:border-2 border-2  border-gray-400  px-2 py-2 text-gray-700 rounded-md outline-none placeholder:text-gray-400 font-thin text-sm"
+                  type="text"
+                  name="text"
+                  placeholder="Search..."
+                  class="max-w-[190px] bg-gray-200 text-gray-800 px-2 py-0 min-h-[35px] rounded-2xl outline-none border-0 shadow-md   hover:outline hover:outline-1 font-thin  transition duration-200 placeholder:font-thin"
                 />
-                <button className="relative ml-[-30px]">
+
+                <button className="absolute right-10  h-auto">
                   <SearchIcon />
                 </button>
               </div>
               <button className="absolute right-2"></button>
+
+              <Link href={"/cart"}>
+                <CartIcon />
+              </Link>
             </div>
-
-            <Link href={"/cart"}>
-              <CartIcon />
-            </Link>
           </div>
-        </div>
 
-        {isMenuOpen && (
-          <div className="md:hidden mt-4 transition-all duration-300 ease-in-out">
-            <ul className="flex flex-col space-y-4 text-gray-700 text-[14px] font-semibold">
-              <div className="flex  items-center justify-start gap-8 focus:border border-gray-900">
-                <input
-                  type="text"
-                  placeholder="Search product here..."
-                  className="  rounded-md focus:border border-gray-800  w-1/2 px-3 py-4"
-                />
-
-                <button className="bg-gray-900  p-2">
-                  <MobileSearch />
-                </button>
-              </div>
-              {links.slice(5).map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href}>
-                    <span className="cursor-pointer hover:text-gray-800">
-                      {link.label}
-                    </span>
+          {isMenuOpen && (
+            <div className="md:hidden absolute top-14 left-0 w-full bg-white shadow-md z-50 transition-all  duration-300 ease-in-out">
+              <ul className="flex overflow-scroll flex-col space-y-4 text-gray-700 text-[14px] font-semibold p-4">
+                <div className="flex items-center justify-start gap-2 px-3">
+                  <input
+                    type="text"
+                    placeholder="Search product here..."
+                    className="rounded-md border border-gray-500 outline-none  focus:border-gray-900 w-full px-3 py-2"
+                  />
+                  <button className="bg-gray-900 p-2 rounded-md text-white">
+                    <MobileSearch />
+                  </button>
+                </div>
+                {links.slice(5).map((link) => (
+                  <li key={link.label} className="px-3">
+                    <Link href={link.href}>
+                      <span className="cursor-pointer hover:text-gray-800">
+                        {link.label}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+                <div className="flex justify-start items-start flex-col p-2 px-3 gap-2">
+                  <Link
+                    href={"/login"}
+                    className="bg-gray-900 text-gray-50 p-3 w-full rounded-md"
+                  >
+                    Log in
                   </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+                  <Link
+                    href={"/signup"}
+                    className="border border-gray-900 w-full p-3 rounded-md"
+                  >
+                    Sign up
+                  </Link>
+                </div>
+              </ul>
+            </div>
+          )}
+        </div>
       </nav>
     </>
   );
