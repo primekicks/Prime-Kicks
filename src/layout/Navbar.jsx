@@ -119,20 +119,21 @@ const Navbar = () => {
           </ul>
 
           <div className="hidden md:flex items-center justify-center gap-3 space-x-4 text-[14px] font-semibold">
-            <div className="flex items-center justify-center relative">
-              <div className="flex justify-center items-center ">
-                <input
-                  type="text"
-                  name="text"
-                  placeholder="Search..."
-                  class="max-w-[190px] bg-gray-200 text-gray-800 px-2 py-0 min-h-[35px] rounded-2xl outline-none border-0 shadow-md   hover:outline hover:outline-1 font-thin  transition duration-200 placeholder:font-thin"
-                />
+            <div className="flex items-center justify-between gap-8  w-full">
+              <div className="flex justify-center items-center">
+                <div className="relative">
+                  <input
+                    type="text"
+                    name="text"
+                    placeholder="Search..."
+                    class="max-w-[190px]  bg-gray-200 text-gray-800 px-2 py-0 min-h-[35px] rounded-2xl outline-none border-0 shadow-md   hover:outline hover:outline-1 font-thin  transition duration-200 placeholder:font-thin"
+                  />
 
-                <button className="absolute right-10  h-auto">
-                  <SearchIcon />
-                </button>
+                  <button className="absolute right-2 top-2  h-auto">
+                    <SearchIcon />
+                  </button>
+                </div>
               </div>
-              <button className="absolute right-2"></button>
 
               <Link href={"/cart"}>
                 <CartIcon />
