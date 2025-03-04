@@ -15,10 +15,10 @@ const BrandBanner = () => {
   ];
   return (
     <main className="m-2 max-w-[1600px] mx-auto container">
-      <ul className=" w-full px-[20px] lg:px-10 py-[20px] flex flex-wrap justify-evenly sm:justify-between items-center gap-5">
+      <ul className=" w-full px-[20px] lg:px-10 py-[20px] flex flex-wrap justify-center sm:justify-center items-center gap-[150px]">
         {brandName.map((value, i) => {
           return (
-            <li key={i} className="">
+            <li key={i} className="cursor-pointer">
               {value.icon}
             </li>
           );
