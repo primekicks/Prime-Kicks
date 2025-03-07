@@ -35,31 +35,37 @@ const About = () => {
 
   const values = [
     {
+      icon: " ✅",
       title: "Be world class",
       description:
         "lorem hankukuku, kuch kuch hota edge di eg teru sabann karpura garuram haina ra",
     },
     {
+      icon: " ✅",
       title: "Take responsibility",
       description:
         "lorem hankukuku, kuch kuch hota edge di eg teru sabann karpura garuram haina ra",
     },
     {
+      icon: " ✅",
       title: "Be supportive",
       description:
         "lorem hankukuku, kuch kuch hota edge di eg teru sabann karpura garuram haina ra",
     },
     {
+      icon: " ✅",
       title: "Always learning",
       description:
         "lorem hankukuku, kuch kuch hota edge di eg teru sabann karpura garuram haina ra",
     },
     {
+      icon: " ✅",
       title: "Share everything you know",
       description:
         "lorem hankukuku, kuch kuch hota edge di eg teru sabann karpura garuram haina ra",
     },
     {
+      icon: " ✅",
       title: "Enjoy down time",
       description:
         "lorem hankukuku, kuch kuch hota edge di eg teru sabann karpura garuram haina ra",
@@ -67,6 +73,12 @@ const About = () => {
   ];
 
   const ourTeam = [
+    {
+      photo: "/aboutUs.png",
+      name: "Aryan Sharma",
+      position: "Developer",
+      location: "Kapan, Kathmandu",
+    },
     {
       photo: "/aboutUs.png",
       name: "Aryan Sharma",
@@ -119,12 +131,12 @@ const About = () => {
           ))}
         </div>
 
-        <div className="flex items-center justify-between px-5">
+        <div className="flex flex-wrap justify-between px-5">
           {stats.map((value, i) => {
             return (
               <div
                 key={i}
-                className="pl-2 md:pl-10 border-l-2 border-l-gray-800 w-[25%]"
+                className="pl-6 border-l-2 border-l-gray-500 sm:w-[50%] md:w-[25%] w-[100%] my-3"
               >
                 <h1 className="text-[30px] font-semibold">{value.value}</h1>
                 <p className="">{value.label}</p>
@@ -133,10 +145,10 @@ const About = () => {
           })}
         </div>
 
-        <div className="flex items-center justify-center mx-5 my-16 rounded-2xl">
+        <div className="flex items-center justify-center mx-5 my-16 rounded-2xl w-full md:h-[600px]">
           <img
             src="aboutUs.png"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl "
             alt="About Us"
           />
         </div>
@@ -147,37 +159,42 @@ const About = () => {
           <p className="text-xl">maya lai dhan ko bhat</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {values.map((value, i) => (
-              <div key={i} className="p-5">
-                <h1 className="text-xl font-semibold">{value.title}:</h1>
-                <p>{value.description}</p>
+              <div key={i}>
+                <div className="flex gap-x-2">
+                  <span>{value.icon}</span>
+                  <h1 className="text-xl font-semibold">{value.title}:</h1>
+                </div>
+                <p className="px-8">{value.description}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="flex flex-col p-5">
+        <div className="flex flex-col p-5 ">
           <h1 className="text-[30px] font-semibold">Our Team</h1>
           <p className="text-xl">
             We're a dynamic group of individuals who are passionate about what
-            we do and dedicated to delevering the best result for our client.
+            we do and dedicated to delivering the best result for our client.
           </p>
-          <div className="py-5 flex flex-wrap justify-center items-center gap-10">
+          <div className="py-5 flex flex-wrap items-center justify-start gap-5">
             {ourTeam.map((team, i) => {
               return (
-                <div key={i} className=" flex flex-col justify-center">
-                  <div className="flex flex-col justify-center w-[320px] h-[350px] rounded-2xl overflow-hidden">
+                <div
+                  key={i}
+                  className="w-full sm:w-[48%] md:w-[31%] xl:w-[23%]"
+                >
+                  <div className="rounded-2xl overflow-hidden">
                     <img
                       src={team.photo}
-                      className="w-full h-full object-cover rounded-2xl mb-3"
+                      className="object-cover rounded-2xl mb-3"
                       alt={team.name}
                     />
-                    <div>
-                      <h1 className="text-2xl font-semibold">{team.name}</h1>
-                      <p className="text-[19px] font-semibold">
-                        {team.position}
-                      </p>
-                      <p>{team.location}</p>
-                    </div>
+                  </div>
+                  {/* Ensure this section is visible */}
+                  <div className="">
+                    <h1 className="text-2xl font-semibold">{team.name}</h1>
+                    <p className="text-[19px] font-semibold">{team.position}</p>
+                    <p>{team.location}</p>
                   </div>
                 </div>
               );
@@ -185,35 +202,33 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-start p-5">
-          <div className="md:w-[40%] w-full md:p-[30px]">
+        <div className="flex flex-col md:flex-row items-start justify-center p-8 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg">
+          <div className="md:w-[40%] w-full h-[350px] md:p-[30px]">
             <img
               src="aboutUs.png"
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full object-cover rounded-xl"
               alt="Team"
             />
           </div>
+
           <div className="md:w-[60%] flex flex-col justify-start items-start md:p-[30px]">
             <h1 className="text-[40px] font-semibold">Join Our Team</h1>
-            <p className="text-md">
-              Lorem knu pau deso chu go inke ikcha anurup app lekh sakte ho
+            <p className="text-md opacity-80">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Possimus
+              magnam voluptatum cupiditate veritatis in accusamus.
             </p>
-            <div className="my-5 font-semibold grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {workEnvironment.map((value, i) => {
-                return (
-                  <div key={i} className="text-xl">
-                    <ul className="">
-                      <li>{value.title}</li>
-                    </ul>
-                  </div>
-                );
-              })}
+
+            <div className="my-5 font-semibold grid grid-cols-1 md:grid-cols-2 gap-5">
+              {workEnvironment.map((value, i) => (
+                <div key={i} className="flex items-center text-lg">
+                  ✅ <span className="ml-2">{value.title}</span>
+                </div>
+              ))}
             </div>
-            <div>
-              <button className="text-violet-600 font-semibold py-5">
-                See our job posting →
-              </button>
-            </div>
+
+            <button className="text-violet-600 font-semibold py-5">
+              See our job postings →
+            </button>
           </div>
         </div>
       </section>
